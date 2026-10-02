@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Small-One {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    color: #B3B3B3;
+    font-size: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.Small-One .location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Small-One .content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Small-One .content a {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.Small-One .account {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.Midle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 44px;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.input-searech {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    height: 100%;
+    padding-left: 16px;
+    font-size: 20px;
+}
+
+.input-searech input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.btn-searech {
+    background-color: #00B207;
+    color: #FFFFFF;
+    border: none;
+    height: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons svg {
+    font-size: 28px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: -7px;
+}
+
+.info-text {
+    color: #666666;
+    font-size: 11px;
+}
+
+.info-num {
+    color: #1A1A1A;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    border-top: 1px solid #333333;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #00B207;
+}
+
+.call-now {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.call-now span {
+    color: #1A1A1A;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.breadcrumbs {
+    position: relative;
+}
+
+.breadcrumbs > img {
+    width: 100%;
+    display: block;
+}
+
+.location-img {
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.acc {
+    color: #999999;
+    font-size: 11px;
+}
+
+.acc:last-of-type {
+    color: #00B207;
+}
+
+.Login {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.Login form {
+    width: 400px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.Login h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+}
+
+.email {
+    margin-bottom: 15px;
+}
+
+.email input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    outline: none;
+}
+
+.password {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.password input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 44px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    outline: none;
+}
+
+.confirm input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    outline: none;
+}
+
+.password img {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    width: 20px;
+    cursor: pointer;
+}
+
+.confirm input {
+    padding-right: 44px;
+}
+ 
+.confirm img {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    width: 20px;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 20px;
+    padding-top: 16px;
+}
+
+.links a {
+    margin-left: auto;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #00B207;
+    color: #FFFFFF;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #008A05;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #666666;
+}
+
+.login-text a {
+    color: #000000;
+    font-weight: bold;
+}
+
+.sub-Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2F2F2;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+.frame-info {
+    max-width: 440px;
+}
+
+.frame-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 8px;
+}
+
+.frame-info p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #808080;
+}
+
+.Subscribe {
+    display: flex;
+    padding-right: 10px;
+}
+
+.Subscribe input {
+    width: 250px;
+    padding: 10px 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.sub-btn {
+    background-color: #00B207;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.frame-icon {
+    display: flex;
+    gap: 10px;
+}
+
+.Footer {
+    background-color: #1A1A1A;
+    color: #999999;
+    font-size: 14px;
+    padding-top: 50px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 40px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+.Company {
+    flex: 2;
+}
+
+.Company p {
+    color: #808080;
+    padding-top: 22px;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 22px;
+}
+
+.cta p {
+    color: #FFFFFF;
+    text-decoration: underline #00B207;
+    text-underline-offset: 10px;
+}
+
+.cta span {
+    color: #808080;
+}
+
+.myaccount {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.help {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.proxy {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.categories {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main-footer h4 {
+    color: #FFFFFF;
+    margin-bottom: 7px;
+}
+
+.main-footer a:hover {
+    color: #FFFFFF;
+}
+
+.copy-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+.footer-frame img {
+    height: 25px;
+    margin-left: 5px;
+}
+
+
+/* BreakPoint: 992px  tablet landscape and small desktops */
+@media (max-width: 992px) {
+ 
+    /* Top Bar Responsive */
+    .Small-One {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+ 
+ 
+    /* Header Responsive */
+    .Midle {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+ 
+    .navigation {
+        width: 300px;
+    }
+ 
+    .nav-links {
+        flex-wrap: wrap;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+ 
+ 
+    /* Breadcrumbs Responsive */
+    .breadcrumbs > img {
+        height: 120px;
+        object-fit: cover;
+        object-position: right;
+    }
+ 
+    .location-img {
+        left: 32px;
+    }
+ 
+ 
+    /* Newsletter Responsive */
+    .sub-Footer {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+ 
+    .frame-info br {
+        display: none;
+    }
+ 
+ 
+    /* Footer Responsive */
+    .main-footer {
+        flex-wrap: wrap;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+ 
+    .Company {
+        flex: 1 1 100%;
+    }
+ 
+    .copy-right {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+ 
+ 
+/* BreakPoint: 768px  tablet portrait */
+@media (max-width: 768px) {
+ 
+    /* Top Bar Responsive */
+    .Small-One {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+ 
+ 
+    /* Header Responsive */
+    .Midle {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+ 
+    .navigation {
+        order: 3;
+        width: 100%;
+    }
+ 
+    .nav-links {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+ 
+ 
+    /* Breadcrumbs Responsive */
+    .location-img {
+        left: 24px;
+    }
+ 
+ 
+    /* Login Responsive */
+    .Login form {
+        width: 90%;
+    }
+ 
+ 
+    /* Newsletter Responsive */
+    .sub-Footer {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+ 
+ 
+    /* Footer Responsive */
+    .main-footer {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+ 
+    .myaccount {
+        flex: 1 1 40%;
+    }
+ 
+    .help {
+        flex: 1 1 40%;
+    }
+ 
+    .proxy {
+        flex: 1 1 40%;
+    }
+ 
+    .categories {
+        flex: 1 1 40%;
+    }
+ 
+    .copy-right {
+        flex-direction: column;
+        gap: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+ 
+ 
+/* BreakPoint: 380px  extra small screens and mobile */
+@media (max-width: 380px) {
+ 
+    /* Top Bar Responsive */
+    .Small-One {
+        flex-direction: column;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+ 
+ 
+    /* Header Responsive */
+    .Midle {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+ 
+    .nav-links {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+ 
+    .call-now {
+        margin-left: 0;
+    }
+ 
+ 
+    /* Breadcrumbs Responsive */
+    .location-img {
+        left: 16px;
+    }
+ 
+ 
+    /* Login Responsive */
+    .Login form {
+        padding: 20px;
+    }
+ 
+ 
+    /* Newsletter Responsive */
+    .sub-Footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+ 
+    .Subscribe {
+        width: 100%;
+        padding-right: 0;
+    }
+ 
+    .Subscribe input {
+        width: 100%;
+    }
+ 
+ 
+    /* Footer Responsive */
+    .main-footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+ 
+    .myaccount {
+        flex: 1 1 100%;
+    }
+ 
+    .help {
+        flex: 1 1 100%;
+    }
+ 
+    .proxy {
+        flex: 1 1 100%;
+    }
+ 
+    .categories {
+        flex: 1 1 100%;
+    }
+ 
+    .copy-right {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+ 
